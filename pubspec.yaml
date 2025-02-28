@@ -1,0 +1,14 @@
+name: mtrust_urp_types
+description: This package provides comprehensive type definitions for the
+  mtrust_urp library and all associated mtrust kits, ensuring seamless
+  integration and enhanced functionality in your projects.
+homepage: https://docs.mtrust.io/sdks
+version: 6.1.0
+license: Apache 2.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  protobuf: ^3.1.0
+  fixnum: ^1.1.1
+dev_dependencies:
+  protoc_plugin: ^21.1.2
