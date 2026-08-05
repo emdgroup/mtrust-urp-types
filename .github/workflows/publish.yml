@@ -1,0 +1,18 @@
+name: Publish to pub.dev
+
+on:
+  # Auto-publish prereleases (e.g. v6.2.0-43) pushed from the monorepo `dev` branch.
+  # Stable versions (e.g. v6.2.1) remain manual via workflow_dispatch.
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+-*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    permissions:
+      contents: read
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: .
