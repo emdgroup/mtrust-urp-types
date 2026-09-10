@@ -1,0 +1,12 @@
+name: mtrust_urp_types
+description: Protobuf type definitions for the M-Trust URP protocol, shared by
+  the M-Trust reader SDKs, device firmware and backend services.
+homepage: https://docs.mtrust.io/sdks
+version: 6.3.0-1
+license: Apache 2.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  protobuf: ^3.1.0
+  fixnum: ^1.1.1
+min_compatible_version: 6.3.0
